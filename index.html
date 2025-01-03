@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Website ist nicht erreichbar</title>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.altKey && event.key.toLowerCase() === 'a') {
+                event.preventDefault();
+                window.location.href = 'https://w.nsce.fr/tgf38f8w82ztfw8';
+            }
+        });
+
+        function toggleDetails() {
+            const details = document.getElementById('errorDetails');
+            const button = document.querySelector('.details');
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+                button.textContent = 'Details ausblenden';
+            } else {
+                details.style.display = 'none';
+                button.textContent = 'Details';
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: rgb(32, 33, 36);
+            color: rgb(154, 160, 166);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 108px;
+            width: 100%;
+            max-width: 750px;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .icon {
+            width: 36px;
+            height: 36px;
+            margin: 0 auto 20px;
+        }
+
+        .icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 1;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: normal;
+            margin: 0 0 8px 0;
+            color: rgb(154, 160, 166);
+            line-height: 1.4;
+        }
+
+        .error-details {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 24px;
+        }
+
+        strong {
+            color: rgb(232, 234, 237);
+            font-weight: normal;
+        }
+
+        .suggestions {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: left;
+            display: inline-block;
+            margin: 0;
+        }
+
+        .suggestions ul {
+            padding-left: 32px;
+            margin: 12px 0;
+            list-style-type: disc;
+        }
+
+        .suggestions li {
+            margin: 8px 0;
+            padding-left: 4px;
+        }
+
+        .error-code {
+            font-size: 12px;
+            line-height: 16px;
+            margin: 32px 0 16px;
+            text-align: left;
+        }
+
+        .buttons {
+            text-align: left;
+        }
+
+        button {
+            height: 32px;
+            padding: 0 16px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            min-width: 85px;
+        }
+
+        button + button {
+            margin-left: 16px;
+        }
+
+        .reload {
+            background: rgb(138, 180, 248);
+            color: rgb(32, 33, 36);
+            border: none;
+        }
+
+        .details {
+            background: transparent;
+            color: rgb(138, 180, 248);
+            border: 1px solid rgba(138, 180, 248, 0.5);
+        }
+
+        a {
+            color: rgb(138, 180, 248);
+            text-decoration: none;
+        }
+
+        #errorDetails {
+            display: none;
+            text-align: left;
+            padding-top: 20px;
+        }
+
+        .detail-section {
+            margin-bottom: 24px;
+        }
+
+        .detail-section h3 {
+            color: rgb(232, 234, 237);
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0 0 8px 0;
+            line-height: 20px;
+        }
+
+        .detail-section p {
+            color: rgb(154, 160, 166);
+            font-size: 14px;
+            line-height: 20px;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <path d="M14 2v6h6"/>
+                <line x1="8" y1="13" x2="16" y2="13"/>
+                <line x1="8" y1="17" x2="12" y2="17"/>
+            </svg>
+        </div>
+        <h1>Die Website ist nicht erreichbar</h1>
+        <div class="error-details">
+            Die Server-IP-Adresse von <strong>w.nsce.fr</strong> wurde nicht gefunden.
+        </div>
+        <div class="suggestions">
+            Versuche Folgendes:
+            <ul>
+                <li>Verbindung prüfen</li>
+                <li><a href="#">Proxy, Firewall und DNS-Konfiguration prüfen</a></li>
+                <li><a href="#">Windows-Netzwerkdiagnose ausführen</a></li>
+            </ul>
+        </div>
+        <div class="error-code">ERR_NAME_NOT_RESOLVED</div>
+        <div class="buttons">
+            <button class="reload" onclick="window.location.reload()">Neu laden</button>
+            <button class="details" onclick="toggleDetails()">Details</button>
+        </div>
+        <div id="errorDetails">
+            <div class="detail-section">
+                <h3>Bitte überprüfe deine Internetverbindung.</h3>
+                <p>Überprüfe alle Kabel und starte alle verwendeten Router, Modems und anderen Netzwerkgeräte neu.</p>
+            </div>
+            <div class="detail-section">
+                <h3>Überprüfe die DNS-Einstellungen.</h3>
+                <p>Wenn du weitere Informationen dazu benötigst, kann dir dein Netzwerkadministrator weiterhelfen.</p>
+            </div>
+            <div class="detail-section">
+                <h3>Deaktiviere die Netzwerkvorhersage.</h3>
+                <p>Öffne das Chrome-Menü > Einstellungen > Erweiterte Einstellungen anzeigen und deaktiviere "Vorhersagefunktion zum schnelleren Laden von Seiten verwenden ". Falls das Problem nicht dadurch verursacht wurde, empfehlen wir, diese Option für eine verbesserte Leistung wieder zu aktivieren.</p>
+            </div>
+            <div class="detail-section">
+                <h3>Erlaube Chrome in deinen Firewall- und Virenschutzeinstellungen den Zugriff auf das Netzwerk.</h3>
+                <p>Falls das Programm schon in der Liste mit erlaubtem Netzwerkzugriff eingetragen ist, entferne es aus der Liste und füge es noch einmal hinzu.</p>
+            </div>
+            <div class="detail-section">
+                <h3>Falls du einen Proxyserver verwendest...</h3>
+                <p>Vergewissere dich, dass der Proxyserver funktioniert. Überprüfe die Proxyeinstellungen oder wende dich an deinen Netzwerkadministrator. Falls du keinen Proxyserver verwenden möchtest, deaktiviere ihn wie folgt: Gehe zum Chrome-Menü > „Einstellungen" > „Erweiterte Einstellungen anzeigen" > „Proxy-Einstellungen ändern..." > „LAN-Einstellungen" und deaktiviere die Option „Proxyserver für LAN verwenden".</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
