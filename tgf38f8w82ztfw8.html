@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.nsce.com/main.css">
+    <title>W nsce</title>
+    <script>
+        // Check for stored style preference
+        const storedStyle = localStorage.getItem('selectedStyle');
+        const styleLink = document.createElement('link');
+        styleLink.rel = 'stylesheet';
+        styleLink.href = storedStyle === 'modern' ? 'style2.css' : 'styles.css';
+        document.head.appendChild(styleLink);
+      </script>
+</head>
+<body>
+    <!-- Matrix background will be inserted here by JavaScript -->
+    <main>
+        <h1>Welcome to W nsce</h1>
+        <div class="hero">
+            <h2>The Secret Website of nsce</h2>
+            <p>Here you will find a lot of information about many thins</p>
+        </div>
+        
+</body>
+</html>
