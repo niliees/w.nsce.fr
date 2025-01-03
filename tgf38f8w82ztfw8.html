@@ -9,7 +9,7 @@
         body {
             background-color: #000000;
         }
-
+        
         main {
             color: #006eff;
             text-align: center;
@@ -18,22 +18,32 @@
         }
     </style>
     <script>
-        // Check for stored style preference
-        const storedStyle = localStorage.getItem('selectedStyle');
-        const styleLink = document.createElement('link');
-        styleLink.rel = 'stylesheet';
-        styleLink.href = storedStyle === 'modern' ? 'style2.css' : 'styles.css';
-        document.head.appendChild(styleLink);
-      </script>
+        // Definiere das nsce-Objekt mit der w-Methode
+        window.nsce = {
+            w: function(options) {
+                if (options && options.color) {
+                    // Wähle alle Text-Elemente in main
+                    const mainElements = document.querySelectorAll('main h1, main h2, main p');
+                    mainElements.forEach(element => {
+                        element.style.color = options.color;
+                    });
+                    
+                    // Gib eine Bestätigung in der Konsole aus
+                    console.log(`Text color changed to ${options.color}`);
+                    return true;
+                }
+                return false;
+            }
+        };
+    </script>
 </head>
 <body>
-    <!-- Matrix background will be inserted here by JavaScript -->
     <main>
         <h1>Welcome to W nsce</h1>
         <div class="hero">
             <h2>The Secret Website of nsce</h2>
             <p>Here you will find a lot of information about many thins</p>
         </div>
-        
+    </main>
 </body>
 </html>
