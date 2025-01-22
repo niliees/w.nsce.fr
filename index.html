@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.nsce.fr/main.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <title>Projekte - Meine Website</title>
-    <script>
-        // Check for stored style preference
-        const storedStyle = localStorage.getItem('selectedStyle');
-        const styleLink = document.createElement('link');
-        styleLink.rel = 'stylesheet';
-        styleLink.href = storedStyle === 'modern' ? 'style2.css' : 'styles.css';
-        document.head.appendChild(styleLink);
-      </script>
 </head>
 <body>
     <main>
@@ -20,7 +14,6 @@
             <div class="project-card">
                 <h2>Fortnite Cheat Menü</h2>
                 <div class="project-content">
-                    <p>Eine Website mit coolen Tools.</p>
                     <ul class="project-details">
                         <li><span class="label">Neuste version:</span> v3-beta</li>
                         <li><span class="label">Functions:</span> Aimbot, Visuals, Msc, World, Exploit</li>
